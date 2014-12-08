@@ -1,6 +1,9 @@
 \documentclass{article}
 \usepackage{mathtools}
 \begin{document}
+
+
+% F_y by limit definition
 \begin{align*}
 f_y &= \lim_{h\to\infty} \frac{f(a, b+h) - f(a,b)}{h} \\
 &= \lim_{h\to\infty} (\frac{1}{h}) (\frac{a^3(b+h) - a(b+h)^3}{a^2+(b+h)^2} - \frac{a^3b-ab^3}{a^2+b^2}) \\
@@ -24,4 +27,7 @@ Set a = 0
 \lim_{b\to0} & \frac{0}{24b} &&= \frac{0}{0} \\
 \lim_{b\to0} & \frac{0}{24} &&= 0 \\
 \end{align*}
+
+% end F_y by limit definition
+
 \end{document}
