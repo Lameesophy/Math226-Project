@@ -7,6 +7,7 @@
 Stephen (Vinnie) Magro \& Nick Entin \\
 \indent MATH 226 Project \#2 - Distance from a point to line or to a plane \\
 \newline
+\newline
 \end{text}
 \begin{text}
 Problem 1. \\
@@ -14,33 +15,72 @@ Problem 1. \\
 
 % begin 1.1
 \begin{text}
-1) Consider the plane P of equation x + y + z ? 1 = 0 and the point Q = (2, 1, 2)
+1) Consider the plane P of equation x + y + z - 1 = 0 and the point Q = (2, 1, 2)
+\newline
+\end{text}
+
+\begin{text}
+\indent a) Find the equation of the line orthogonal to P going through Q.
+\newline\newline
+\indent\indent\indent Given the equation of P, we can define the normal vector to P:
 \end{text}
 
 \begin{align*}
-a) \: L(t) &= < 2, 1, 2 > + < 1, 1, 1 >t \\
-&= < 2 + t, 1 + t, 2 + t >
+\vec{N}=<1,1,1>
 \end{align*}
 
+\begin{text}
+\indent\indent By definition, the line orthogonal to P must be parallel to it's normal vector and pass through Q:
+\end{text}
+
 \begin{align*}
-b) \: 2 + t + 1 + t + 2 + t -1 &= 0 \\
+\vec{L}(t) &= \vec{Q} + \vec{N}t \\
+           &= < 2, 1, 2 > + < 1, 1, 1 >t \\
+           &= < 2 + t, 1 + t, 2 + t >
+\end{align*}
+
+\begin{text}
+\indent b) Find the coordinates of the intersection point of that line with P.
+\newline\newline
+\indent\indent\indent First, we must solve for t where it fulfills the equation of the plane P.
+\end{text}
+
+\begin{align*}
+x + y + z - 1 &= 0 \\
+2 + t + 1 + t + 2 + t -1 &= 0 \\
 3t + 4 &= 0 \\
-t &= -\frac{4}{3} \\
-I &= (\frac{2}{3}, -\frac{1}{3}, \frac{2}{3})
-\end{align*}
+t &= -\frac{4}{3}
+\end {align*}
+
+\begin{text}
+\indent\indent We can then plug our new value of t into our orthogonal line to find the point of intersection.
+\end{text}
 
 \begin{align*}
-c) \: d &= \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} \\
+I &= \vec{L}(-\frac{4}{3}) \\
+  &= (2 - \frac{4}{3}, 1 - \frac{4}{3}, 2 - \frac{4}{3}) \\
+  &= (\frac{2}{3}, -\frac{1}{3}, \frac{2}{3})
+\end{align*}
+
+\begin{text}
+\indent c) The distance between a point and a plane is the distance between the point and its orthogonal projection on the \\
+\indent\indent\indent plane.  Use b) to compute the distance between Q and P.
+\end{text}
+
+\begin{align*}
+d &= \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} \\
 &= \sqrt{(2 - \frac{2}{3})^2 + (1 + \frac{1}{3})^2 + (2 - \frac{2}{3})^2} \\
 &= \sqrt{\frac{16}{9} + \frac{16}{9} + \frac{16}{9}} \\
 &= \sqrt{\frac{16}{3}} = \frac{4}{\sqrt{3}} = \frac{4\sqrt{3}}{3}
 \end{align*}
 % end 1.1
 
+\newpage
+
 % begin 1.2
 \begin{text}
-2) Given a plane $P$ of equation $ax + by + cz + d = 0$ and a point $Q = (x0, y0, z0)$. Let denote $\vec{N} = (a, b, c)$ a normal vector to $P$.
-Show that the distance between $Q$ and $P$ is given by:
+2) Given a plane $P$ of equation $ax + by + cz + d = 0$ and a point $Q = (x0, y0, z0)$. Let denote $\vec{N} = (a, b, c)$ a normal \\
+\indent\indent vector to $P$.  Show that the distance between $Q$ and $P$ is given by:
 $$
 \frac{|ax_0 + by_0 + cz_0 + d|}{||\vec{N}||}
 $$
@@ -176,9 +216,9 @@ H = \vec{L}(t) = (\alpha + a(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma 
 \end{equation*}
 
 \begin{alignat*}{3}
-\alpha &= 2	\quad & \beta &= -1	\quad & \gamma &= 1 \\
-a &= 1		\quad & b &= 1		\quad & c &= 1\\
-x_0 &= 2		\quad & y_0 &= 1	\quad & z_0 &= 2\\
+\alpha &= 2 \quad & \beta &= -1 \quad & \gamma &= 1 \\
+a &= 1    \quad & b &= 1    \quad & c &= 1\\
+x_0 &= 2    \quad & y_0 &= 1  \quad & z_0 &= 2\\
 \end{alignat*}
 \begin{align*}
 \text{Let } k &= \frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2} \\
