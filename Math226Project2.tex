@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{mathtools}
+\usepackage[margin=0.5in]{geometry}
 \begin{document}
 
 \begin{text}
@@ -38,7 +39,8 @@ Show that the distance between $Q$ and $P$ is given by:
 $$
 \frac{|ax_0 + by_0 + cz_0 + d|}{||\vec{N}||}
 $$
-Check your answer from 1)c) using the formula above
+\centering
+Check your answer from 1)c) using the formula above\par
 \end{text}
 
 
@@ -103,9 +105,9 @@ Problem 2
 Q = (2,1,2)
 \]
 
-\begin{text}
-Find $H$ on $\vec{L}$ such that $\vec{HQ} \perp \vec{L}$ \\
-\end{text}
+\begin{center}
+Find $H$ on $\vec{L}$ such that $\vec{HQ} \perp \vec{L}$
+\end{center}
 
 \begin{align*}
 \text{Let } \vec{u} &= \text{direction vector of } \vec{L} \\
@@ -116,8 +118,9 @@ Find $H$ on $\vec{L}$ such that $\vec{HQ} \perp \vec{L}$ \\
 a) \vec{QH} &= <2, -1, 1> + t<1,1,1> - <2,1,2> \\
 &= <t, t-2, t-1>
 \end{align*}
+
 \begin{align*}
-\vec{QH} \cdot \vec{u} &= 0 \\
+\vec{QH} \cdot \vec{u} &= 0  \text{ (orthogonal)}\\
 t + t - 2 + t -1 &= 0 \\
 3t - 3 &= 0 \\
 3t &= 3 \\
@@ -145,16 +148,16 @@ d &= \sqrt{2}
 \;\;\;
 Q = (x_0, y_0, z_0) , \:\: \vec{v} = <a, b, c>
 \]
-\begin{text}
+\begin{center}
 Let $H$ be the point on $\vec{L}$ where $\vec{QH} \perp \vec{v}$
-\end{text}
+\end{center}
 
 \begin{align*}
 \vec{QH} &= <\alpha, \beta, \gamma> + t<a, b, c> - <x_0, y_0, z_0> \\
 \vec{QH} &= <at + \alpha - x_0, bt + \beta - y_0, ct + \gamma - z_0>
 \end{align*}
 \begin{align*}
-\vec{QH} \cdot \vec{v} &= 0 \\
+\vec{QH} \cdot \vec{v} &= 0  \text{ (orthogonal)} \\
 a(at + \alpha - x_0) + b(bt + \beta - y_0) + c(ct + \gamma - z_0) &= 0 \\
 at^2 + a\alpha - ax_0 + bt^2 + b\beta - by_0 + ct^2 + c\gamma - cz_0 &= 0 \\
 t(a^2 + b^2 + c^2) + a(\alpha - x_0) + b(\beta - y_0) + c(\gamma - z_0) &= 0 \\
@@ -171,7 +174,7 @@ H = \vec{L}(t) = (\alpha + a(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma 
 \alpha &= 2	\quad & \beta &= -1	\quad & \gamma &= 1 \\
 a &= 1		\quad & b &= 1		\quad & c &= 1\\
 x_0 &= 2		\quad & y_0 &= 1	\quad & z_0 &= 2\\
-\end{alignat*}{3}
+\end{alignat*}
 \begin{align*}
 \text{Let } k &= \frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2} \\
 \text{For variables as defined above:} \\
