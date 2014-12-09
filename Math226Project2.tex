@@ -10,7 +10,7 @@ Stephen (Vinnie) Magro \& Nick Entin \\
 \newline
 \end{text}
 \begin{text}
-Problem 1. \\
+\indent Problem 1 \\
 \end{text}
 
 % begin 1.1
@@ -159,9 +159,8 @@ d &= \frac{| 2 + 1 + 2 - 1 |}{\sqrt{1^2 + 1^2 + 1^2}} \\
 
 \begin{text}
 Problem 2 \\
-\end{text}
 
-1)
+1) Consider the line $\vec{L}$ and point $Q$ as defined below:
 \[\vec{L}(t) = \left\{
   \begin{array}{lr}
     x &= t + 2 \\
@@ -169,23 +168,32 @@ Problem 2 \\
     z &= t + 1
   \end{array}
 \right.
-\;\;\;
+\;\;\;\;\;
 Q = (2,1,2)
 \]
 
-\begin{center}
-Find $H$ on $\vec{L}$ such that $\vec{HQ} \perp \vec{L}$
-\end{center}
+\indent\indent Find $H$ on $\vec{L}$ such that $\vec{HQ} \perp \vec{L}$
+\end{text}
 
 \begin{align*}
 \text{Let } \vec{u} &= \text{direction vector of } \vec{L} \\
 &= <1,1,1>
 \end{align*}
 
+\begin{text}
+\indent a) Find the coordinates of the point $H$ on the line $\vec{L}$ such that $\vec{HQ}$ is orthogonal to $\vec{L}$.
+\end{text}
+
 \begin{align*}
-a) \vec{QH} &= <2, -1, 1> + t<1,1,1> - <2,1,2> \\
-&= <t, t-2, t-1>
+\vec{QH} &= <2, -1, 1> + <1,1,1>t - <2,1,2> \\
+         &= <t, t-2, t-1>
 \end{align*}
+
+\begin{text}
+\indent\indent Since $\vec{QH} \perp \vec{L}$ and $\vec{u}$ is the direction vector of $\vec{L}$, then $\vec{QH} \perp \vec{u}$ as well. \\ \\
+\indent\indent\indent Using the knowledge that for any two orthogonal vectors, the dot product of the two vectors will equal $0$, we \\
+\indent\indent\indent can find the value of $t$ for which $H = \vec{L}(t)$:
+\end{text}
 
 \begin{align*}
 \vec{QH} \cdot \vec{u} &= 0  \text{ (orthogonal)}\\
@@ -194,18 +202,30 @@ t + t - 2 + t -1 &= 0 \\
 3t &= 3 \\
 t &= 1
 \end{align*}
+
 \begin{align*}
 H &= (1+2, 1-1, 1+1) \\
 H &= (3, 0, 2)
 \end{align*}
 
+\begin{text}
+\indent b) The distance between a point and a line is the distance between the point and its orthogonal projection onto the \\
+\indent\indent\indent line.  Use b) to compute the distance between $Q$ and $L$.
+\end{text}
+
 \begin{align*}
-b) \: d &= \sqrt{(3-2)^2 + (0-1)^2 + (2-2)^2} \\
-&= \sqrt{1^2 + (-1)^2 + 0^2} \\
-d &= \sqrt{2}
+d &= \sqrt{(3-2)^2 + (0-1)^2 + (2-2)^2} \\
+  &= \sqrt{1^2 + (-1)^2 + 0^2} \\
+  &= \sqrt{2}
 \end{align*}
 
-2)
+% going to next page to keep following section together
+\newpage
+
+\begin{text}
+2) Given a line $L$ and point $Q$ as defined below:
+\end{text}
+
 \[\vec{L}(t) = \left\{
   \begin{array}{lr}
     x &= \alpha + at \\
@@ -214,11 +234,18 @@ d &= \sqrt{2}
   \end{array}
 \right.
 \;\;\;
-Q = (x_0, y_0, z_0) , \:\: \vec{v} = <a, b, c>
+Q = (x_0, y_0, z_0)
 \]
-\begin{center}
-Let $H$ be the point on $\vec{L}$ where $\vec{QH} \perp \vec{v}$
-\end{center}
+
+\begin{align*}
+\text{Let } \vec{v} &= \text{direction vector of } \vec{L} \\
+&= <a, b, c>
+\end{align*}
+
+\begin{text}
+\indent Find a formula for the distance between $Q$ and $L$. \\ \\
+\indent\indent Let $H$ be the point on $\vec{L}$ where $\vec{QH} \perp \vec{v}$
+\end{text}
 
 \begin{align*}
 \vec{QH} &= <\alpha, \beta, \gamma> + t<a, b, c> - <x_0, y_0, z_0> \\
