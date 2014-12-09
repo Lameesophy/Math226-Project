@@ -91,6 +91,7 @@ d &= \frac{4\sqrt{3}}{3}
 Problem 2
 \end{text}
 
+1)
 \[\vec{L}(t) = \left\{
   \begin{array}{lr}
     x &= t + 2 \\
@@ -126,5 +127,65 @@ t &= 1
 H &= (1+2, 1-1, 1+1) \\
 H &= (3, 0, 2)
 \end{align*}
+
+\begin{align*}
+b) \: d &= \sqrt{(3-2)^2 + (0-1)^2 + (2-2)^2} \\
+&= \sqrt{1^2 + (-1)^2 + 0^2} \\
+d &= \sqrt{2}
+\end{align*}
+
+2)
+\[\vec{L}(t) = \left\{
+  \begin{array}{lr}
+    x &= \alpha + at \\
+    y &= \beta + bt \\
+    z &= \gamma + ct
+  \end{array}
+\right.
+\;\;\;
+Q = (x_0, y_0, z_0) , \:\: \vec{v} = <a, b, c>
+\]
+\begin{text}
+Let $H$ be the point on $\vec{L}$ where $\vec{QH} \perp \vec{v}$
+\end{text}
+
+\begin{align*}
+\vec{QH} &= <\alpha, \beta, \gamma> + t<a, b, c> - <x_0, y_0, z_0> \\
+\vec{QH} &= <at + \alpha - x_0, bt + \beta - y_0, ct + \gamma - z_0>
+\end{align*}
+\begin{align*}
+\vec{QH} \cdot \vec{v} &= 0 \\
+a(at + \alpha - x_0) + b(bt + \beta - y_0) + c(ct + \gamma - z_0) &= 0 \\
+at^2 + a\alpha - ax_0 + bt^2 + b\beta - by_0 + ct^2 + c\gamma - cz_0 &= 0 \\
+t(a^2 + b^2 + c^2) + a(\alpha - x_0) + b(\beta - y_0) + c(\gamma - z_0) &= 0 \\
+\\
+t = \frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2}
+\end{align*}
+\begin{equation*}
+\begin{multlined}
+H = \vec{L}(t) = (\alpha + a(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2}), \beta + b(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2}), \\\gamma + c(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2})
+\end{multlined}
+\end{equation*}
+
+\begin{alignat*}{3}
+\alpha &= 2	\quad & \beta &= -1	\quad & \gamma &= 1 \\
+a &= 1		\quad & b &= 1		\quad & c &= 1\\
+x_0 &= 2		\quad & y_0 &= 1	\quad & z_0 &= 2\\
+\end{alignat*}{3}
+\begin{align*}
+\text{Let } k &= \frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2} \\
+\text{For variables as defined above:} \\
+k &= \frac{-1(2-2) - 1(-1-1) - 1(1-2)}{1^2 + 1^2 + 1^2} \\
+k &= 1
+\end{align*}
+
+Check 1.b
+\begin{align*}
+d &= \sqrt{(\alpha + a(k) - x_0)^2 + (\beta + b(k) - y_0)^2 + (\gamma + c(k) - z_0)^2} \\
+&= \sqrt{(2 + 1(1) - 2)^2 + (-1 + 1(1) - 1)^2 + (1 + 1(1) - 2)^2} \\
+&= \sqrt{1 + 1 + 0} \\
+d &= \sqrt{2} \quad \text{ (Matches answer in 1.b)}
+\end{align*}
+
 
 \end{document}
