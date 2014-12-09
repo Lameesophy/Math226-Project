@@ -84,8 +84,6 @@ d &= \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2} \\
 $$
 \frac{|ax_0 + by_0 + cz_0 + d|}{||\vec{N}||}
 $$
-\indent\indent Check your answer from 1)c) using the formula above. \\
-\newline
 \indent\indent We define $\vec{L}$ as the line orthogonal to $P$ and passing through $Q$.
 \end{text}
 
@@ -145,12 +143,12 @@ $$
 \newpage
 
 \begin{text}
-\indent Now, let's check our answer from 1)c):
+\indent Now, let's check our answer from 1.c:
 \end{text}
 
 \begin{align*}
 d &= \frac{| 2 + 1 + 2 - 1 |}{\sqrt{1^2 + 1^2 + 1^2}} \\
-&= \frac{| 4 |}{\sqrt{3}} = \frac{4\sqrt{3}}{3}
+&= \frac{| 4 |}{\sqrt{3}} = \frac{4\sqrt{3}}{3} \quad \text{ (Matches answer in 1.c)}
 \end{align*}
 
 % end 1.2
@@ -251,6 +249,12 @@ Q = (x_0, y_0, z_0)
 \vec{QH} &= <\alpha, \beta, \gamma> + t<a, b, c> - <x_0, y_0, z_0> \\
 \vec{QH} &= <at + \alpha - x_0, bt + \beta - y_0, ct + \gamma - z_0>
 \end{align*}
+
+\begin{text}
+\indent Using the knowledge that for any two orthogonal vectors, the dot product of the two vectors will equal $0$, we \\
+\indent\indent can find the value of $t$ for which $H = \vec{L}(t)$:
+\end{text}
+
 \begin{align*}
 \vec{QH} \cdot \vec{v} &= 0  \text{ (orthogonal)} \\
 a(at + \alpha - x_0) + b(bt + \beta - y_0) + c(ct + \gamma - z_0) &= 0 \\
@@ -259,25 +263,49 @@ t(a^2 + b^2 + c^2) + a(\alpha - x_0) + b(\beta - y_0) + c(\gamma - z_0) &= 0 \\
 \\
 t = \frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2}
 \end{align*}
+
+\begin{text}
+\indent Now we can plug this value into $\vec{L}$ to find $H$:
+\end{text}
+
 \begin{equation*}
 \begin{multlined}
 H = \vec{L}(t) = (\alpha + a(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2}), \beta + b(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2}), \\\gamma + c(\frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2})
 \end{multlined}
 \end{equation*}
 
+\begin{text}
+\indent In order to simplify this equation, let us define a variable $k$ to represent the specific value of $t$:
+\end{text}
+
+\begin{align*}
+\text{Let } k &= \frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2}
+\end{align*}
+
+\begin{text}
+\newline
+\indent Now let us check our answer from 1.b above.  First, we must adapt the given data into our general equation:
+\end{text}
+
 \begin{alignat*}{3}
 \alpha &= 2 \quad & \beta &= -1 \quad & \gamma &= 1 \\
 a &= 1    \quad & b &= 1    \quad & c &= 1\\
-x_0 &= 2    \quad & y_0 &= 1  \quad & z_0 &= 2\\
+x_0 &= 2    \quad & y_0 &= 1  \quad & z_0 &= 2
 \end{alignat*}
+
+\begin{text}
+\indent Let us solve for $k$ using the variable above so that we can use a simpler form of our equation:
+\end{text}
+
 \begin{align*}
-\text{Let } k &= \frac{-a(\alpha - x_0) - b(\beta - y_0) - c(\gamma - z_0)}{a^2+b^2+c^2} \\
-\text{For variables as defined above:} \\
 k &= \frac{-1(2-2) - 1(-1-1) - 1(1-2)}{1^2 + 1^2 + 1^2} \\
 k &= 1
 \end{align*}
 
-Check 1.b
+\begin{text}
+\indent Finally, we can solve for $d$ and see if our answers match:
+\end{text}
+
 \begin{align*}
 d &= \sqrt{(\alpha + a(k) - x_0)^2 + (\beta + b(k) - y_0)^2 + (\gamma + c(k) - z_0)^2} \\
 &= \sqrt{(2 + 1(1) - 2)^2 + (-1 + 1(1) - 1)^2 + (1 + 1(1) - 2)^2} \\
